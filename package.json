@@ -1,0 +1,25 @@
+{
+  "name": "projectleaf-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ghinghes/ProjectLeaf-Backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Ghinghes/ProjectLeaf-Backend/issues"
+  },
+  "homepage": "https://github.com/Ghinghes/ProjectLeaf-Backend#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongodb": "^6.20.0"
+  }
+}
