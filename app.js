@@ -2,7 +2,7 @@
 const express = require('express')
 const mongodb = require('mongodb')
 
-const port = 3000
+const port = process.env.PORT
 const user = "projectleafadmin000"
 const pass = "t42Rz3zKWpX9G4M9WxPhK98mKnFz5hnS"
 const dbUri = `mongodb+srv://${user}:${pass}@project-leaf-db.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000`
@@ -45,5 +45,5 @@ app.get('/init-db', async function (req, res) {
 })
 
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+    console.log(`project-leaf-backend listening on port ${port}`)
 })
