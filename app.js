@@ -23,8 +23,13 @@ app.get('/', async function (req, res) {
     res.send(locations)
 })
 
-app.get('/init-db', async function (req, res) {
-    console.log('/init-db')
+app.get('/test', async function (req, res) {
+    console.log('/test')
+    res.send('Test endpoint is working!')
+})
+
+app.get('/reset-db', async function (req, res) {
+    console.log('/reset-db')
     console.log(dbUri)
     const client = new mongodb.MongoClient(dbUri)
     await client.connect()
