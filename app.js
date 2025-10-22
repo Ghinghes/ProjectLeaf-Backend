@@ -11,7 +11,7 @@ const collectionName = "coordinates"
 
 const app = express()
 
-app.get('/', async function (req, res) {
+app.get('/get-locations', async function (req, res) {
     console.log('/')
     console.log(dbUri)
     const client = new mongodb.MongoClient(dbUri)
