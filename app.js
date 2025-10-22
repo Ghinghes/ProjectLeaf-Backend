@@ -1,6 +1,7 @@
 
 const express = require('express')
 const mongodb = require('mongodb')
+const cors = require('cors')
 
 const port = process.env.PORT
 const user = "projectleafadmin000"
@@ -11,8 +12,10 @@ const collectionName = "coordinates"
 
 const app = express()
 
+app.use(cors())
+
 app.get('/get-locations', async function (req, res) {
-    console.log('/')
+    console.log('/get-locations')
     console.log(dbUri)
     const client = new mongodb.MongoClient(dbUri)
     await client.connect()
