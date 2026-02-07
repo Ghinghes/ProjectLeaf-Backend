@@ -43,9 +43,9 @@ app.get('/reset-db', async function (req, res) {
     await collection.deleteMany({})
 
     const entries = [
-        { name: 'Point A', latitude: 45.755, longitude: 21.225 },
-        { name: 'Point B', latitude: 46.067, longitude: 23.580 },
-        { name: 'Point C', latitude: 44.426, longitude: 26.102 }
+        { id: '2223afc4-3e49-4367-9a43-751546cabade', title: 'Timisoara', latitude: 45.755, longitude: 21.225 },
+        { id: 'd811511b-7894-4619-8342-cc2e0d348a77', title: 'Alba Iulia', latitude: 46.067, longitude: 23.580 },
+        { id: '550e8400-e29b-41d4-a716-446655440002', title: 'Bucuresti', latitude: 44.426, longitude: 26.102 }
     ]
 
     await collection.insertMany(entries)
